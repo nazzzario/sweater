@@ -13,24 +13,22 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     @Autowired
     public MessageRepos messageRepos;
 
-    @GetMapping("/greeting")
-    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "User") String name,
-                           Map<String,Object> model) {
-        model.put("name", name);
-        return "greeting";
+    @GetMapping
+    public String home(Map<String,Object> model) {
+        return "home";
     }
 
-    @GetMapping
+    @GetMapping("/main")
     public String main(Map<String,Object> model){
         Iterable<Message> messages = messageRepos.findAll();
         model.put("massages",messages);
         return "main";
     }
-    @PostMapping
+    @PostMapping("/main")
     public String add(@RequestParam String text,
                       @RequestParam String tag,
                       Map<String,Object> model){
