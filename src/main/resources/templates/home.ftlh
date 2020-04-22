@@ -1,6 +1,6 @@
 <#import "parts/common.ftlh" as c>
 <@c.page>
-<p>Welcome user</p>
-<a href="/main">Main page</a>
+<h5>Hello user</h5>
+<div>It`s my first Spring project</div>
 </@c.page>
 
