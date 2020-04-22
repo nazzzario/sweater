@@ -10,11 +10,12 @@ public class Message {
 
     private String text;
     private String tag;
+    private String filename;
+
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
-
 
     public Message(String text, String tag, User user) {
         this.text = text;
@@ -60,4 +61,13 @@ public class Message {
     public void setAuthor(User author) {
         this.author = author;
     }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
 }
