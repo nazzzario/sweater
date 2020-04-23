@@ -2,7 +2,12 @@
 <@c.page>
 User Editor
 <form action="/user" method="post">
-    <input type="text" value="${user.username}" name="username">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"> Change username: </label>
+            <div class="col-sm-3">
+        <input type="text" value="${user.username}" name="username" class="form-control">
+            </div>
+    </div>
     <#list roles as role>
         <div>
             <label>
@@ -13,6 +18,11 @@ User Editor
     </#list>
 <input type="hidden" value="${user.id}" name="userId">
 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-<button type="submit">Save</button>
+<div>
+<button type="submit" class="btn btn-primary">Save</button>
+</div>
+<div>
+    <button type="submit" class="btn btn-primary mt-2">Delete user</button>
+</div>
 </form>
 </@c.page>
