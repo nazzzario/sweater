@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="2de46887-de73-4f1a-b36a-bce1c7255157">
-        <schema name="sweater_db" object-types="procedure, function, index, table, column, dataset trigger, view, constraint" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2de46887-de73-4f1a-b36a-bce1c7255157">
