@@ -14,6 +14,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/main">Messages</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user-message/${currentUserId}/">My Messages</a>
+            </li>
             <#if user??>
             <li class="nav-item">
                 <a class="nav-link" href="/user/profile">Profile</a>
