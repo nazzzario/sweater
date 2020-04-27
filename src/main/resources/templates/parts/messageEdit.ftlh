@@ -27,7 +27,8 @@
 </div>
 <div class="custom-file">
     <input class="form-control"  type="file" name="file" id="customFile">
-    <label class="custom-file-label" for="customFile">Choose File</label>
+    <label class="custom-file-label" for="customFile">Chose file</label>
+
 </div>
 <input class="form-control"  type="hidden" name="_csrf" value="${_csrf.token}"/>
 <input class="form-control"  type="hidden" name="id" value="<#if message??>${message.id}</#if>"/>

@@ -120,7 +120,7 @@ public class MainController {
             messageRepos.save(message);
         }
 
-        return "redirect:/user-message" + user;
+        return "redirect:/user-message/" + user.getId();
     }
 
 
