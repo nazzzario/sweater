@@ -13,7 +13,7 @@ ${message?ifExists}
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"> Email: </label>
         <div class="col-sm-3">
-            <input class="form-control" type="email" name="email" placeholder="example@some.somo" value="${email!''}"/>
+            <input class="form-control" type="email" name="email" placeholder="example@some.some" value="${email!''}"/>
         </div>
     </div>
 
