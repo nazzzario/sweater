@@ -55,13 +55,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <!--DB connection-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!--DB connection-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -73,6 +73,8 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--DB connection-->
+
         <!--Spring security-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -88,6 +90,7 @@
             <artifactId>spring-session-jdbc</artifactId>
         </dependency>
         <!--Spring security-->
+
         <!--Mail-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -110,6 +113,12 @@
             <artifactId>jaxb-api</artifactId>
             <version>2.3.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>18.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -130,6 +139,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

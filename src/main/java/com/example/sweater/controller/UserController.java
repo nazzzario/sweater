@@ -64,7 +64,7 @@ public class UserController {
 
         userService.subscribe(currentUser,user);
 
-        return "redirect;/user-messages/" + user.getId();
+        return "redirect:/user-message/" + user.getId();
     }
 
     @GetMapping("unsubscribe/{user}")
@@ -74,7 +74,7 @@ public class UserController {
 
         userService.unsubscribe(currentUser,user);
 
-        return "redirect;/user-messages/" + user.getId();
+        return "redirect:/user-message/" + user.getId();
     }
 
     @GetMapping("{type}/{user}/list")
