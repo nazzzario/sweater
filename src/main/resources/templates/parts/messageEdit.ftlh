@@ -1,5 +1,5 @@
 <p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <a class="btn btn-primary mt-3" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
         Message editor
     </a>
 </p>
@@ -28,7 +28,6 @@
 <div class="custom-file">
     <input class="form-control"  type="file" name="file" id="customFile">
     <label class="custom-file-label" for="customFile">Chose file</label>
-
 </div>
 <input class="form-control"  type="hidden" name="_csrf" value="${_csrf.token}"/>
 <input class="form-control"  type="hidden" name="id" value="<#if message??>${message.id}</#if>"/>
