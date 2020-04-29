@@ -26,7 +26,7 @@
     </#if>
 </div>
 <div class="custom-file">
-    <input class="form-control"  type="file" name="file" id="customFile">
+    <input class="form-control"  type="file" name="file" id="customFile"/>
     <label class="custom-file-label" for="customFile">Chose file</label>
 
 </div>

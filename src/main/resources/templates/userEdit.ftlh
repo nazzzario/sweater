@@ -5,7 +5,7 @@ User Editor
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"> Change username: </label>
             <div class="col-sm-3">
-        <input type="text" value="${user.username}" name="username" class="form-control">
+        <input type="text" value="${user.username}" name="username" class="form-control"/>
             </div>
     </div>
     <#list roles as role>
