@@ -1,6 +1,6 @@
 package com.example.sweater;
 
-import com.example.sweater.controller.MainController;
+import com.example.sweater.controller.MessageController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -21,12 +21,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @TestPropertySource("/application-test.properties")
 @Sql(value = {"/create_user_before.sql","/messages_list_before.sql"},executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 @Sql(value = {"/messages_list_after.sql","/create_user_after.sql" },executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
-public class MainControllerTest {
+public class MessageControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
     @Autowired
-    private MainController mainController;
+    private MessageController messageController;
 
     @Test
     public void mainPageTest() throws Exception{

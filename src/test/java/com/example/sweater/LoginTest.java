@@ -1,6 +1,6 @@
 package com.example.sweater;
 
-import com.example.sweater.controller.MainController;
+import com.example.sweater.controller.MessageController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -22,14 +22,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @TestPropertySource("/application-test.properties")
 public class LoginTest {
     @Autowired
-    private MainController mainController;
+    private MessageController messageController;
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     public void contextLoads() throws Exception {
-        assertThat(mainController).isNotNull();
+        assertThat(messageController).isNotNull();
         this.mockMvc.perform(get("/"))
                 .andDo(print())
                 .andExpect(status().isOk())
